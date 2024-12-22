@@ -1,3 +1,6 @@
+using System.Collections.Concurrent;
+using System.Threading.Tasks;
+
 using System.IO;
 
 /// <summary>
@@ -8,7 +11,7 @@ public class AudioClipStorage
     /// <summary>
     /// Dictionary containing all loaded audio clips, indexed by their names.
     /// </summary>
-    public static Dictionary<string, AudioClipData> AudioClips { get; } = new Dictionary<string, AudioClipData>();
+    public static ConcurrentDictionary<string, AudioClipData> AudioClips { get; } = new ConcurrentDictionary<string, AudioClipData>();
 
     /// <summary>
     /// Loads an audio clip from the specified file path and stores it in the collection.
@@ -29,6 +32,7 @@ public class AudioClipStorage
         if (string.IsNullOrEmpty(name))
             name = Path.GetFileNameWithoutExtension(path);
 
+
         // Ensure no clip with the same name is already loaded.
         if (AudioClips.ContainsKey(name))
         {
@@ -38,11 +42,10 @@ public class AudioClipStorage
 
         string extension = Path.GetExtension(path);
 
-        float[] samples = null;
-        int sampleRate = 0;
-        int channels = 0;
+        float[] samples;
+        int sampleRate;
+        int channels;
 
-        // Handle supported file formats.
         switch (extension)
         {
             case ".ogg":
@@ -50,7 +53,6 @@ public class AudioClipStorage
                 {
                     sampleRate = reader.SampleRate;
                     channels = reader.Channels;
-
                     samples = new float[reader.TotalSamples * channels];
                     reader.ReadSamples(samples);
                 }
@@ -61,7 +63,7 @@ public class AudioClipStorage
         }
 
         // Add the loaded clip data to the collection.
-        AudioClips.Add(name, new AudioClipData(name, sampleRate, channels, samples));
+        AudioClips.TryAdd(name, new AudioClipData(name, sampleRate, channels, samples));
         return true;
     }
 
