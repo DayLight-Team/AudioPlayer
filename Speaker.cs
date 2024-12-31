@@ -1,76 +1,6 @@
 ﻿public class Speaker : MonoBehaviour
 {
     /// <summary>
-    /// Base SpeakerToy instance that this Speaker is wrapping around.
-    /// </summary>
-    public SpeakerToy Base;
-
-    /// <summary>
-    /// Owner of speaker.
-    /// </summary>
-    public AudioPlayer Owner;
-
-    /// <summary>
-    /// Gets name of speaker.
-    /// </summary>
-    public string Name { get; set; }
-
-    /// <summary>
-    /// Gets or sets speaker position.
-    /// </summary>
-    public Vector3 Position
-    {
-        get => transform.position;
-        set => transform.position = value;
-    }
-
-    /// <summary>
-    /// Gets or sets the volume of the speaker.
-    /// </summary>
-    public float Volume
-    {
-        get => Base.Volume;
-        set => Base.Volume = value;
-    }
-
-    /// <summary>
-    /// Gets or sets whether the speaker uses spatial audio.
-    /// </summary>
-    public bool IsSpatial
-    {
-        get => Base.IsSpatial;
-        set => Base.IsSpatial = value;
-    }
-
-    /// <summary>
-    /// Gets or sets the maximum distance at which the audio is audible.
-    /// </summary>
-    public float MaxDistance
-    {
-        get => Base.MaxDistance;
-        set => Base.MaxDistance = value;
-    }
-
-    /// <summary>
-    /// Gets or sets the minimum distance at which the audio is at full volume.
-    /// </summary>
-    public float MinDistance
-    {
-        get => Base.MinDistance;
-        set => Base.MinDistance = value;
-    }
-
-    /// <summary>
-    /// Destroys speaker.
-    /// </summary>
-    public void Destroy() => UnityEngine.Object.Destroy(gameObject);
-
-    void OnDestroy()
-    {
-        Owner?.RemoveSpeaker(Name);
-    }
-
-    /// <summary>
     /// Creates a new speaker instance in the scene.
     /// </summary>
     /// <param name="controllerId">The network controller ID associated with the speaker.</param>
@@ -111,4 +41,71 @@
 
         return speaker;
     }
+
+    /// <summary>
+    /// Base SpeakerToy instance that this Speaker is wrapping around.
+    /// </summary>
+    public SpeakerToy Base;
+
+    /// <summary>
+    /// Owner of speaker.
+    /// </summary>
+    public AudioPlayer Owner;
+
+    /// <summary>
+    /// Gets name of speaker.
+    /// </summary>
+    public string Name { get; set; }
+
+    /// <summary>
+    /// Gets or sets speaker position.
+    /// </summary>
+    public Vector3 Position
+    {
+        get => transform.position;
+        set => transform.position = value;
+    }
+
+    /// <summary>
+    /// Gets or sets the volume of the speaker.
+    /// </summary>
+    public float Volume
+    {
+        get => Base.NetworkVolume;
+        set => Base.NetworkVolume = value;
+    }
+
+    /// <summary>
+    /// Gets or sets whether the speaker uses spatial audio.
+    /// </summary>
+    public bool IsSpatial
+    {
+        get => Base.NetworkIsSpatial;
+        set => Base.NetworkIsSpatial = value;
+    }
+
+    /// <summary>
+    /// Gets or sets the maximum distance at which the audio is audible.
+    /// </summary>
+    public float MaxDistance
+    {
+        get => Base.NetworkMaxDistance;
+        set => Base.NetworkMaxDistance = value;
+    }
+
+    /// <summary>
+    /// Gets or sets the minimum distance at which the audio is at full volume.
+    /// </summary>
+    public float MinDistance
+    {
+        get => Base.NetworkMinDistance;
+        set => Base.NetworkMinDistance = value;
+    }
+
+    /// <summary>
+    /// Destroys speaker.
+    /// </summary>
+    public void Destroy() => UnityEngine.Object.Destroy(gameObject);
+
+    void OnDestroy() => Owner?.RemoveSpeaker(Name);
 }
