@@ -10,18 +10,270 @@
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	</PropertyGroup>
 	<ItemGroup>
+	  <PackageReference Include="ExMod.Exiled" Version="9.6.0" />
 	  <PackageReference Include="NVorbis" Version="0.10.5" />
 	</ItemGroup>
-	
 	<ItemGroup>
 	  <Reference Include="Assembly-CSharp">
-	    <HintPath>..\..\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Assembly-CSharp.dll</HintPath>
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Assembly-CSharp-Publicized.dll</HintPath>
 	  </Reference>
 	  <Reference Include="Mirror">
-	    <HintPath>..\..\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\Mirror.dll</HintPath>
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Mirror-Publicized.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.Burst">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.Burst.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.Burst.Unsafe">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.Burst.Unsafe.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.Mathematics">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.Mathematics.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.ProBuilder">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.ProBuilder.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.ProBuilder.Csg">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.ProBuilder.Csg.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.ProBuilder.KdTree">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.ProBuilder.KdTree.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.ProBuilder.Poly2Tri">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.ProBuilder.Stl">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.ProBuilder.Stl.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.RenderPipelines.Core.Runtime">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.TextMeshPro">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.TextMeshPro.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.Timeline">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.Timeline.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.VisualEffectGraph.Runtime">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AccessibilityModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.AccessibilityModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AIModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.AIModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AndroidJNIModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.AndroidJNIModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AnimationModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.AnimationModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ARModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ARModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AssetBundleModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.AssetBundleModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AudioModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.AudioModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ClothModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ClothModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ClusterInputModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ClusterInputModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ClusterRendererModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ClusterRendererModule.dll</HintPath>
 	  </Reference>
 	  <Reference Include="UnityEngine.CoreModule">
-	    <HintPath>..\..\SteamLibrary\steamapps\common\SCP Secret Laboratory Dedicated Server\SCPSL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.CoreModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.CrashReportingModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.CrashReportingModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.DirectorModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.DirectorModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.DSPGraphModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.DSPGraphModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.GameCenterModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.GameCenterModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.GIModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.GIModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.GridModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.GridModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.HotReloadModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.HotReloadModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ImageConversionModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ImageConversionModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.IMGUIModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.IMGUIModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputLegacyModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.InputLegacyModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.InputModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.JSONSerializeModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.JSONSerializeModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.LocalizationModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.LocalizationModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.NVIDIAModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.NVIDIAModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ParticleSystemModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ParticleSystemModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.PerformanceReportingModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.PerformanceReportingModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.Physics2DModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.Physics2DModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.PhysicsModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.PhysicsModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ProfilerModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ProfilerModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ScreenCaptureModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.ScreenCaptureModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.SharedInternalsModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.SharedInternalsModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.SpriteMaskModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.SpriteMaskModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.SpriteShapeModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.SpriteShapeModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.StreamingModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.StreamingModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.SubstanceModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.SubstanceModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.SubsystemsModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.SubsystemsModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TerrainModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TerrainModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TerrainPhysicsModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextCoreFontEngineModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextCoreTextEngineModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextRenderingModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TextRenderingModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TilemapModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TilemapModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.TLSModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.TLSModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UI.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIElementsModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UIElementsModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIElementsNativeModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UIElementsNativeModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UIModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UmbraModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UmbraModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UNETModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UNETModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityAnalyticsModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityConnectModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityConnectModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityCurlModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityCurlModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityTestProtocolModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityWebRequestModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.VehiclesModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.VehiclesModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.VFXModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.VFXModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.VideoModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.VideoModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.VirtualTexturingModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.VirtualTexturingModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.VRModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.VRModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.WindModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.WindModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.XRModule">
+	    <HintPath>..\DayLight.Main\Dependencies\SL References\UnityEngine.XRModule.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 </Project>
