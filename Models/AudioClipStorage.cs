@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 using System.IO;
 
+using System.Collections.Concurrent;
+using System.Threading.Tasks;
+
 /// <summary>
 /// Manages the storage and loading of audio clips for playback.
 /// </summary>
