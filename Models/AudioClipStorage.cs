@@ -83,6 +83,6 @@ public class AudioClipStorage
             return false;
         }
 
-        return AudioClips.Remove(name);
+        return AudioClips.TryRemove(name, out var _);
     }
 }
