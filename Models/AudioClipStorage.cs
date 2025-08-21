@@ -68,7 +68,7 @@ public class AudioClipStorage
         }
 
         // Create a new AudioClipData instance with default values.
-        AudioClips.Add(name, new AudioClipData(name, sampleRate, channels, samples));
+        AudioClips.TryAdd(name, new AudioClipData(name, sampleRate, channels, samples));
         return true;
     }
 
